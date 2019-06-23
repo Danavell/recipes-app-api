@@ -16,8 +16,8 @@ services:
       # the container
       - ./app:/app
     command: >
-      # 1. sh - c The command is run in the shell
       sh -c "python manage.py runserver 0.0.0.0:8000"
+      # 1. sh - c The command is run in the shell
       # 0.0.0.0 is the host. Runs the django development server 
       # available on all ip addresses on the docker. It will run on 8000
       # mapped to the port in the port configuration      

@@ -12,7 +12,6 @@ COPY ./requirements.txt /requirements.txt
 
 RUN pip install -r /requirements.txt
 
-
 # Makes directory in image for storing the source code of the app.
 # Creates new directory  
 RUN mkdir /app
